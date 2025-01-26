@@ -1,0 +1,11 @@
+{
+    "loginpage_td":{
+        "url":"https://trainee-web-app.azurewebsites.net/auth/login",
+        "username":"test@test.com",
+        "password":"test"
+    },
+    "homepage_td":{
+        "property_address":"123,BTM Layout,Bangalore-88",
+        "deal_number":"1230"
+    }
+}

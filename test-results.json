@@ -1,0 +1,232 @@
+{
+  "config": {
+    "configFile": "D:\\PlaywrightFiles\\Assignment_one\\unicorn.config.one.ts",
+    "rootDir": "D:/PlaywrightFiles/Assignment_one/unicorn/rough",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/PlaywrightFiles/Assignment_one/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/PlaywrightFiles/Assignment_one/unicorn/rough",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/PlaywrightFiles/Assignment_one/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/PlaywrightFiles/Assignment_one/unicorn/rough",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/PlaywrightFiles/Assignment_one/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/PlaywrightFiles/Assignment_one/unicorn/rough",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.50.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "LoginTest.spec.ts",
+      "file": "LoginTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login Test using valid credentials",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "TypeError: Cannot read properties of undefined (reading 'url')",
+                    "stack": "TypeError: Cannot read properties of undefined (reading 'url')\n    at D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\LoginTest.spec.ts:23:34",
+                    "location": {
+                      "file": "D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\LoginTest.spec.ts",
+                      "column": 34,
+                      "line": 23
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m test(\u001b[32m'Login Test using valid credentials'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m() \u001b[33m=>\u001b[39m {\n \u001b[90m 22 |\u001b[39m         \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m         url \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39murl\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m         username \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39musername\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m         password \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39mpassword\u001b[33m;\u001b[39m    \n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateToUrl(url)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\LoginTest.spec.ts",
+                        "column": 34,
+                        "line": 23
+                      },
+                      "message": "TypeError: Cannot read properties of undefined (reading 'url')\n\n\u001b[0m \u001b[90m 21 |\u001b[39m test(\u001b[32m'Login Test using valid credentials'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m() \u001b[33m=>\u001b[39m {\n \u001b[90m 22 |\u001b[39m         \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m         url \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39murl\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m         username \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39musername\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m         password \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39mpassword\u001b[33m;\u001b[39m    \n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateToUrl(url)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\LoginTest.spec.ts:23:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-26T15:13:19.774Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\LoginTest.spec.ts",
+                    "column": 34,
+                    "line": 23
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "539b1c6d7fcc511d6019-c762347a4ce6ba3af2ea",
+          "file": "LoginTest.spec.ts",
+          "line": 21,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ValidateUnicornOne.spec.ts",
+      "file": "ValidateUnicornOne.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate the Unicorn application",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "TypeError: Cannot read properties of undefined (reading 'url')",
+                    "stack": "TypeError: Cannot read properties of undefined (reading 'url')\n    at D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\ValidateUnicornOne.spec.ts:28:34",
+                    "location": {
+                      "file": "D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\ValidateUnicornOne.spec.ts",
+                      "column": 34,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m test(\u001b[32m'Validate the Unicorn application'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m() \u001b[33m=>\u001b[39m {\n \u001b[90m 27 |\u001b[39m         \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m         url \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39murl\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m         username \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39musername\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         password \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39mpassword\u001b[33m;\u001b[39m  \n \u001b[90m 31 |\u001b[39m         property_address \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mhomepage_td\u001b[33m.\u001b[39mproperty_address\u001b[33m;\u001b[39m  \u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\ValidateUnicornOne.spec.ts",
+                        "column": 34,
+                        "line": 28
+                      },
+                      "message": "TypeError: Cannot read properties of undefined (reading 'url')\n\n\u001b[0m \u001b[90m 26 |\u001b[39m test(\u001b[32m'Validate the Unicorn application'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m() \u001b[33m=>\u001b[39m {\n \u001b[90m 27 |\u001b[39m         \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m         url \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39murl\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m         username \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39musername\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m         password \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mloginpage\u001b[33m.\u001b[39mpassword\u001b[33m;\u001b[39m  \n \u001b[90m 31 |\u001b[39m         property_address \u001b[33m=\u001b[39m testdata\u001b[33m.\u001b[39mhomepage_td\u001b[33m.\u001b[39mproperty_address\u001b[33m;\u001b[39m  \u001b[0m\n\u001b[2m    at D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\ValidateUnicornOne.spec.ts:28:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-26T15:13:19.797Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\PlaywrightFiles\\Assignment_one\\unicorn\\rough\\ValidateUnicornOne.spec.ts",
+                    "column": 34,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bf24833e8b8f8d8161af-0ad7f13d4f58ca154cce",
+          "file": "ValidateUnicornOne.spec.ts",
+          "line": 26,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-26T15:13:19.043Z",
+    "duration": 2115.927,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
